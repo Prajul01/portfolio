@@ -1,0 +1,26 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+.container {
+    padding: 3rem 0;
+}
+.button {
+    padding: 3rem;
+    text-align: center;
+    & .btn-primary {
+        background-color: #8b0000!important;
+        border-color: #8b0000!important;
+        font-family: cursive;
+        &:hover{
+            background-color: $bc1;
+            border-color: $bc1;
+            transition: all 3s;
+        }
+    }
+}
+
+.progress-bar {
+    background-color: $bc1;
+    transition: width 5s ease;
+}

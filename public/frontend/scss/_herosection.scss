@@ -1,0 +1,82 @@
+section#hero{
+    & .row{
+        display: block;
+        & .card.govindsah.bio {
+            text-align: center;
+            margin: 1rem;
+            border: none;
+            & .name {
+                font-size: 4rem;
+                padding: 10rem 0 0 0;
+                text-transform: capitalize;
+                & span{
+                    color: $bc1;
+                    border-bottom: 5px solid $bc1;
+                    border-radius: 50%;
+                }
+            }
+            & p.about {
+                padding: 2rem;
+                color: $c1;
+                font-family: $f1;
+            }
+            & ul {
+                display: flex;
+                justify-content: center;
+                border-bottom: 1rem solid $bc1;
+                border-radius: 60%;
+                 margin: 0 0 4rem 0;
+                & li {
+                    width: 40px;
+                    height: 40px;
+                    background: #ff3d0094 !important;
+                    margin: auto 20px;
+                    border-radius: 50%;
+                    animation: bouncing 9s linear infinite alternate-reverse;
+                    &:nth-child(2){
+                        animation-delay: .5s;
+                    }
+                    &:nth-child(3){
+                        animation-delay: 1s;
+                    }
+                    &:nth-child(4){
+                        animation-delay: 1.5s;
+                    }
+                    &:nth-child(5){
+                        animation-delay: 2s;
+                    }
+                    &:nth-child(6){
+                        animation-delay: 2.5s;
+                    }
+                    &:nth-child(7){
+                        animation-delay: 3s;
+                    }
+                }
+                @keyframes bouncing {
+                    0%{
+                        transform: translateY(0);
+                    }
+                    50%{
+                        transform: translateY(-300px);
+                    }
+                    100%{
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 650px){
+	/*Small smartphones [325px -> 650px]*/
+    section#hero{
+        & .row{
+            & .card.govindsah.bio {
+                & .name {
+                    font-size: 1.54rem;
+                    padding: 6rem 0 0 0;
+                }
+            }
+        }
+    }
+}

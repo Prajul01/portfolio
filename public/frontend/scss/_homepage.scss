@@ -1,0 +1,136 @@
+/* Start Nav-Menu Header */
+
+nav{
+    background: $bc1;
+    color: $c;
+    font-size: large;
+    font-weight: 700;
+    height: 5rem;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    & label.logo {
+        font-size: 2rem;
+        line-height: 5rem;
+        padding: 0 6rem;
+        font-weight: bold;
+    }
+    & ul {
+        float: right;
+        line-height: 5rem;
+        margin-right: 2rem;
+        & li {
+            display: inline-block;
+            margin: 0 0.5rem;
+            & a {
+                color: $c;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 7px 13px;
+                border-radius: 3px 13px;
+                &.active{
+                    color: $bc1;
+                    text-decoration: none;
+                    background-color: $bc2;
+                    transition: ease-in-out 1s;
+                    border-bottom: .6rem solid $c;
+                }
+                &:hover{
+                    color: $bc1;
+                    text-decoration: none;
+                    background-color: $bc2;
+                    transition: ease-in-out 3s;
+                    border-bottom: .6rem solid $c;
+                }
+            }
+        }
+    }
+    & input#check {
+        display: none;
+    }
+    & label.checkbtn {
+        display: none;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1026px){
+    /*Tablets [900px -> 1026px]*/
+    nav{
+        height: 4rem;
+        & label.logo {
+            font-size: 1.5rem;
+            line-height: 4rem;
+            padding: 0 3rem;
+            font-weight: 700;
+        }
+        & ul {
+            float: right;
+            line-height: 4rem;
+            margin-right: 1.2rem;
+            & li {
+                & a {
+                    color: $c;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 7px 13px;
+                    border-radius: 3px 13px;
+                    &.active{
+                        border-bottom: .3rem solid $c;
+                        transition: 0s;
+                    }
+                    &:hover{
+                        border-bottom: .3rem solid $c;
+                        transition: 0s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+	/*Big smartphones [426px -> 900px]*/
+    nav{
+        & label.logo {
+            font-size: 2rem;
+            padding-left: 50px;
+            line-height: 4rem;
+        }
+        & label.checkbtn {
+            display: block;
+            float: right;
+            font-size: 2rem;
+            padding-right: 50px;
+            line-height: 4rem;
+        }
+        & ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: $bc3;
+            top: 4rem;
+            left: -100%;
+            text-align: center;
+            transition: 6s;
+            border-radius: 0 0 60%;
+            & li {
+                display: block;
+                & a {
+                    font-size: 1rem;
+                }
+            }
+        }
+        & #check:checked~ul{
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+}
+
+/* End Nav-Menu Header */

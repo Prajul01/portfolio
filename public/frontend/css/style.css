@@ -1,0 +1,585 @@
+/* Theme Description
+-------------------------------------------------
+
+	  Theme Name: Govind Sah
+	  Author: Govind Sah uff Goveend Sonee 
+	  Description: Portfolio Website ( Bootstrap-5 / HTML / SCSS-CSS / React JS / Developed Under WordPress 
+	  Version: 1.0
+	  
+------------------------------------------------- 
+*/
+/* CSS Index
+-------------------------------------------------
+ 
+	1. Theme default CSS
+	2. Header
+
+
+-------------------------------------------------
+*/
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  padding: 3rem 0;
+}
+
+.button {
+  padding: 3rem;
+  text-align: center;
+}
+
+.button .btn-primary {
+  background-color: #8b0000 !important;
+  border-color: #8b0000 !important;
+  font-family: cursive;
+}
+
+.button .btn-primary:hover {
+  background-color: #ff5722 !important;
+  border-color: #ff5722 !important;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.progress-bar {
+  background-color: #ff5722 !important;
+  -webkit-transition: width 5s ease;
+  transition: width 5s ease;
+}
+
+/* Start Nav-Menu Header */
+nav {
+  background: #ff5722 !important;
+  color: navajowhite !important;
+  font-size: large;
+  font-weight: 700;
+  height: 5rem;
+  -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav label.logo {
+  font-size: 2rem;
+  line-height: 5rem;
+  padding: 0 6rem;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  line-height: 5rem;
+  margin-right: 2rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+nav ul li a {
+  color: navajowhite !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px 13px;
+}
+
+nav ul li a.active {
+  color: #ff5722 !important;
+  text-decoration: none;
+  background-color: #fff !important;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  border-bottom: 0.6rem solid navajowhite !important;
+}
+
+nav ul li a:hover {
+  color: #ff5722 !important;
+  text-decoration: none;
+  background-color: #fff !important;
+  -webkit-transition: ease-in-out 3s;
+  transition: ease-in-out 3s;
+  border-bottom: 0.6rem solid navajowhite !important;
+}
+
+nav input#check {
+  display: none;
+}
+
+nav label.checkbtn {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1026px) {
+  /*Tablets [900px -> 1026px]*/
+  nav {
+    height: 4rem;
+  }
+  nav label.logo {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    padding: 0 3rem;
+    font-weight: 700;
+  }
+  nav ul {
+    float: right;
+    line-height: 4rem;
+    margin-right: 1.2rem;
+  }
+  nav ul li a {
+    color: navajowhite !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px 13px;
+  }
+  nav ul li a.active {
+    border-bottom: 0.3rem solid navajowhite !important;
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+  nav ul li a:hover {
+    border-bottom: 0.3rem solid navajowhite !important;
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /*Big smartphones [426px -> 900px]*/
+  nav label.logo {
+    font-size: 2rem;
+    padding-left: 50px;
+    line-height: 4rem;
+  }
+  nav label.checkbtn {
+    display: block;
+    float: right;
+    font-size: 2rem;
+    padding-right: 50px;
+    line-height: 4rem;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #e94f21 !important;
+    top: 4rem;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: 6s;
+    transition: 6s;
+    border-radius: 0 0 60%;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+}
+
+/* End Nav-Menu Header */
+section#hero .row {
+  display: block;
+}
+
+section#hero .row .card.govindsah.bio {
+  text-align: center;
+  margin: 1rem;
+  border: none;
+}
+
+section#hero .row .card.govindsah.bio .name {
+  font-size: 4rem;
+  padding: 10rem 0 0 0;
+  text-transform: capitalize;
+}
+
+section#hero .row .card.govindsah.bio .name span {
+  color: #ff5722 !important;
+  border-bottom: 5px solid #ff5722 !important;
+  border-radius: 50%;
+}
+
+section#hero .row .card.govindsah.bio p.about {
+  padding: 2rem;
+  color: #666 !important;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+section#hero .row .card.govindsah.bio ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1rem solid #ff5722 !important;
+  border-radius: 60%;
+  margin: 0 0 4rem 0;
+}
+
+section#hero .row .card.govindsah.bio ul li {
+  width: 40px;
+  height: 40px;
+  background: #ff3d0094 !important;
+  margin: auto 20px;
+  border-radius: 50%;
+  animation: bouncing 9s linear infinite alternate-reverse;
+}
+
+section#hero .row .card.govindsah.bio ul li:nth-child(2) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+section#hero .row .card.govindsah.bio ul li:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+section#hero .row .card.govindsah.bio ul li:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+section#hero .row .card.govindsah.bio ul li:nth-child(5) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+section#hero .row .card.govindsah.bio ul li:nth-child(6) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+section#hero .row .card.govindsah.bio ul li:nth-child(7) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes bouncing {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /*Small smartphones [325px -> 650px]*/
+  section#hero .row .card.govindsah.bio .name {
+    font-size: 1.54rem;
+    padding: 6rem 0 0 0;
+  }
+}
+
+section#about {
+  background: #292929 !important;
+  color: #fff !important;
+}
+
+section#about .card {
+  background-color: #292929 !important;
+  border: none;
+}
+
+section#about .card .heading {
+  font-weight: bolder;
+  font-size: 4rem;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+}
+
+section#about .card .heading span {
+  color: #ff5722 !important;
+}
+
+section#about .card .row.describe .col-lg-4.col-sm-12 img.card-img-top {
+  height: 24rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  border: 3px solid #ff5722 !important;
+  -webkit-transition: ease-in-out 4s;
+  transition: ease-in-out 4s;
+}
+
+section#about .card .row.describe .col-lg-4.col-sm-12 img.card-img-top:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+section#about .card .row.describe .col-lg-8.col-sm-12 {
+  margin: auto;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+section#about .card .row.describe .col-lg-8.col-sm-12 .card-body {
+  color: #fff !important;
+  font-size: larger;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 650px) {
+  /*Small smartphones [325px -> 650px]*/
+  section#about .card .heading {
+    font-size: 1.54rem;
+    padding-bottom: 1rem;
+  }
+}
+
+section#skills .card.text-center {
+  border: none;
+}
+
+section#skills .card.text-center .heading {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+section#skills .card.text-center .heading span {
+  color: #ff5722 !important;
+  border-bottom: 5px solid #ff5722 !important;
+  border-radius: 50%;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 {
+  margin: 1rem 0;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 .card {
+  -webkit-box-shadow: 0px 5px 13px 6px #ff5722 !important;
+          box-shadow: 0px 5px 13px 6px #ff5722 !important;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 .card .card-text {
+  font-size: 1.6rem;
+  color: darkred !important;
+  font-family: cursive;
+  text-decoration: underline;
+  padding: 2rem;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 .card .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.3rem;
+  overflow: hidden;
+  font-size: 1rem;
+  background-color: #292929 !important;
+  border-radius: 7rem;
+  color: darkred !important;
+  font-family: cursive;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 650px) {
+  /*Small smartphones [325px -> 650px]*/
+  section#skills .card.text-center .heading {
+    font-size: 1.54rem;
+  }
+}
+
+section#portfolio {
+  background: #292929 !important;
+  color: #fff !important;
+}
+
+section#portfolio .card.text-center {
+  border: none;
+  background: #292929 !important;
+  color: #fff !important;
+}
+
+section#portfolio .card.text-center .heading {
+  font-weight: bolder;
+  font-size: 4rem;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+}
+
+section#portfolio .card.text-center .heading span {
+  color: #ff5722 !important;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 {
+  margin: 1rem 0;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img {
+  height: 22rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  -webkit-transition: ease-in-out 13s;
+  transition: ease-in-out 13s;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img:hover, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img:hover {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white h5.card-title, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white h5.card-title {
+  font-size: 1.6rem;
+  color: #ff5722 !important;
+  font-family: cursive;
+  text-decoration: overline;
+  padding-top: 2rem;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text {
+  color: white;
+  font-family: cursive;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: large;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text span, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text span {
+  color: #ab8787;
+}
+
+@media only screen and (max-width: 650px) {
+  /*Small smartphones [325px -> 650px]*/
+  section#portfolio .card.text-center .heading {
+    font-size: 1.54rem;
+  }
+}
+
+section#blog .card.text-center {
+  border: none;
+}
+
+section#blog .card.text-center .card.heading {
+  border: none;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+  color: #ff5722 !important;
+  text-decoration: underline;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 {
+  margin: 1rem 0;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card {
+  border: 3px solid navajowhite !important;
+  -webkit-box-shadow: 0px 6px 16px 6px #ff5722 !important;
+          box-shadow: 0px 6px 16px 6px #ff5722 !important;
+  margin: 4px;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card .card-body h5.card-title {
+  font-weight: 800;
+  font-size: large;
+  font-family: cursive;
+  color: #ff5722;
+  height: 2.9rem;
+  overflow: hidden;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card .card-body p.card-text {
+  border: 4px solid #f9dbdb;
+  border-radius: 2rem 0 0;
+  height: 10rem;
+  overflow: hidden;
+  padding: 0.7rem;
+  text-align: justify;
+  -webkit-box-shadow: 5px 6px #a36a6a;
+          box-shadow: 5px 6px #a36a6a;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+@media only screen and (max-width: 650px) {
+  /*Small smartphones [325px -> 650px]*/
+  section#blog .card.text-center .card.heading {
+    font-size: 1.54rem;
+    padding-bottom: 1rem;
+  }
+}
+
+section#ping .card.text-center {
+  border: none;
+}
+
+section#ping .card.text-center .heading {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+section#ping .card.text-center .heading span {
+  color: #ff5722 !important;
+}
+
+section#ping .card.text-center .row.ping .col-lg-8.col-md-8.col-sm-12 .card {
+  border: none;
+  -webkit-box-shadow: 0px 8px 1px 5px #e7dada;
+          box-shadow: 0px 8px 1px 5px #e7dada;
+}
+
+section#ping .card.text-center .row.ping .col-lg-8.col-md-8.col-sm-12 .card form {
+  margin: 3rem;
+}
+
+section#ping .card.text-center .row.ping .col-lg-8.col-md-8.col-sm-12 .card form .form-control {
+  border: 4px solid #ffebe4;
+  font-family: cursive;
+}
+
+@media only screen and (max-width: 650px) {
+  /*Small smartphones [325px -> 650px]*/
+  section#ping .card.text-center .heading {
+    font-size: 1.53rem;
+  }
+}

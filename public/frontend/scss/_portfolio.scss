@@ -1,0 +1,62 @@
+section#portfolio{
+    background: $c2;
+    color: $bc2;
+    & .card.text-center {
+        border: none;
+        background: $c2;
+        color: $bc2;
+        & .heading {
+            font-weight: bolder;
+            font-size: 4rem;
+            text-transform: capitalize;
+            padding-bottom: 2rem;
+            & span{
+                color: $bc1;
+            }
+        }
+        & .row.portfolio{
+            & .col-lg-3.col-md-6.col-sm-12, & .col-lg-4.col-md-6.col-sm-12{
+                margin: 1rem 0;
+                & .card.bg-dark.text-white{
+                    & img.card-img {
+                        height: 22rem;
+                        object-fit: cover;
+                        object-position: top;
+                        transition: ease-in-out 13s;
+                        &:hover{
+                            object-position: bottom;
+                        }
+                    }
+                    & h5.card-title {
+                        font-size: 1.6rem;
+                        color: $bc1;
+                        font-family: $f2;
+                        text-decoration: overline;
+                        padding-top: 2rem;
+                    }
+                    & p.card-text {
+                        color: white;
+                        font-family: $f2;
+                        padding-bottom: 2rem;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        font-size: large;
+                        & span {
+                            color: #ab8787;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 650px){
+	/*Small smartphones [325px -> 650px]*/
+    section#portfolio{
+        & .card.text-center {
+            & .heading {
+                font-size: 1.54rem;
+            }
+        }
+    }
+}
